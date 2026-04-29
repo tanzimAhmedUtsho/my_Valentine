@@ -1,0 +1,55 @@
+body {
+  background-color: #ffeef2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Hind Siliguri", sans-serif; /* বাংলা ফন্ট */
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(255, 77, 109, 0.2);
+}
+
+img {
+  width: 220px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #ff4d6d;
+  font-size: 28px;
+}
+
+.btn-group {
+  margin-top: 30px;
+  position: relative;
+  height: 60px;
+}
+
+button {
+  padding: 12px 35px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yes-btn {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+#no-btn {
+  background-color: #8395a7;
+  color: white;
+  position: absolute;
+}
