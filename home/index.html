@@ -1,54 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Valentine</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Hind+Siliguri:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="lang-switch">
-      <button id="lang-toggle">English / বাংলা</button>
-    </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="proposal-shell">
+        <div class="language-switch" aria-label="Choose language">
+            <button class="lang-btn active" type="button" data-lang="en">English</button>
+            <button class="lang-btn" type="button" data-lang="bn">বাংলা</button>
+        </div>
 
-    <div class="container">
-      <div id="content">
-        <div class="img-wrapper">
-          <img
-            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29pZzZ0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0BpbmcmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/c76IJLufpNwSULPk77/giphy.gif"
-            alt="Cute Cat"
-            id="image-display"
-          />
-        </div>
-        <h1
-          id="question"
-          data-en="Will you be mine? ❤️"
-          data-bn="তুমি কি আমার হবে? ❤️"
-        >
-          তুমি কি আমার হবে? ❤️
-        </h1>
-        <div class="btn-group">
-          <button id="yes-btn" data-en="Yes" data-bn="হ্যাঁ">হ্যাঁ</button>
-          <button id="no-btn" data-en="No" data-bn="না">না</button>
-        </div>
-      </div>
-    </div>
-    <!-- Add an audio element for the love song -->
-    <audio
-      id="love-song"
-      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      preload="auto"
-    >
-      Your browser does not support the audio element.
-    </audio>
-    <!-- Please replace the 'src' with your desired love song URL (e.g., an MP3 file) -->
-    <footer class="creator">
-      Created by <span class="name">Tanzim Ahmed Utsho</span>
-    </footer>
+        <section class="proposal-card" aria-live="polite">
+            <p class="eyebrow" data-i18n="eyebrow">For the one who makes my heart smile</p>
+            <h1 data-i18n="title">Will you be my Valentine?</h1>
+            <p class="message" data-i18n="message">
+                Every ordinary day feels softer, brighter, and more beautiful when I think of you.
+            </p>
+
+            <div class="heart-scene" aria-hidden="true">
+                <span class="heart big">♥</span>
+                <span class="heart small one">♥</span>
+                <span class="heart small two">♥</span>
+                <span class="heart small three">♥</span>
+            </div>
+
+            <div class="actions">
+                <button id="yesBtn" class="primary-btn" type="button" data-i18n="yes">Yes, forever</button>
+                <button id="noBtn" class="secondary-btn" type="button" data-i18n="no">No</button>
+            </div>
+
+            <p id="answerText" class="answer-text" data-i18n="hint">
+                Tap Yes and let the music begin.
+            </p>
+        </section>
+    </main>
+
+    <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
