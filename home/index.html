@@ -1,44 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Valentine</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="proposal-shell">
-        <div class="language-switch" aria-label="Choose language">
-            <button class="lang-btn active" type="button" data-lang="en">English</button>
-            <button class="lang-btn" type="button" data-lang="bn">বাংলা</button>
+      <div class="language-switch" aria-label="Choose language">
+        <button class="lang-btn active" type="button" data-lang="en">
+          English
+        </button>
+        <button class="lang-btn" type="button" data-lang="bn">বাংলা</button>
+      </div>
+
+      <section class="proposal-card" aria-live="polite">
+        <div class="proposal-copy">
+          <p class="eyebrow" data-i18n="eyebrow">
+            For the one who makes my heart smile
+          </p>
+          <h1 data-i18n="title">Will you be my Valentine?</h1>
+          <p class="message" data-i18n="message">
+            Every ordinary day feels softer, brighter, and more beautiful when I
+            think of you.
+          </p>
+
+          <div class="actions">
+            <button
+              id="yesBtn"
+              class="primary-btn"
+              type="button"
+              data-i18n="yes"
+            >
+              Yes, forever
+            </button>
+            <button
+              id="noBtn"
+              class="secondary-btn"
+              type="button"
+              data-i18n="no"
+            >
+              No
+            </button>
+          </div>
+
+          <p id="answerText" class="answer-text" data-i18n="hint">
+            Tap Yes and let the music begin.
+          </p>
         </div>
 
-        <section class="proposal-card" aria-live="polite">
-            <div class="proposal-copy">
-                <p class="eyebrow" data-i18n="eyebrow">For the one who makes my heart smile</p>
-                <h1 data-i18n="title">Will you be my Valentine?</h1>
-                <p class="message" data-i18n="message">
-                    Every ordinary day feels softer, brighter, and more beautiful when I think of you.
-                </p>
-
-                <div class="actions">
-                    <button id="yesBtn" class="primary-btn" type="button" data-i18n="yes">Yes, forever</button>
-                    <button id="noBtn" class="secondary-btn" type="button" data-i18n="no">No</button>
-                </div>
-
-                <p id="answerText" class="answer-text" data-i18n="hint">
-                    Tap Yes and let the music begin.
-                </p>
-            </div>
-
-            <figure class="hero-art">
-                <img src="assets/romantic-hero.svg" alt="A romantic moonlit proposal illustration">
-            </figure>
-        </section>
+        <figure class="hero-art">
+          <img
+            src="assets/romantic-hero.svg"
+            alt="A romantic moonlit proposal illustration"
+          />
+        </figure>
+      </section>
     </main>
 
     <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
 
+    <!-- এখানে আপনার গানের ফাইলটি দিন -->
+    <audio id="loveSongAudio" src="assets/sitaare.mp3" preload="auto"></audio>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
