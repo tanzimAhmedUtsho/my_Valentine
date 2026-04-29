@@ -7,27 +7,57 @@ const translations = {
     yes: "Yes, forever",
     no: "No",
     hint: "Tap Yes and let the music begin.",
-    accepted: "You said yes! My heart is dancing for you.",
+    detailOneLabel: "Plan",
+    detailOneText: "Unlimited smiles",
+    detailTwoLabel: "Bonus",
+    detailTwoText: "Free annoying texts",
+    detailThreeLabel: "Terms",
+    detailThreeText: "No return policy",
+    funnyNote:
+      "Warning: saying Yes may cause random smiling, extra attention, and suspiciously cute good morning messages.",
+    accepted:
+      "Approved. Your lifetime premium love subscription has started.",
     missingSong:
       "Song file missing. Add your MP3 as assets/sitaare.mp3, then tap Yes again.",
-    teasing: "Please think again...",
+    noLines: [
+      "The No button has left the meeting.",
+      "No is currently unavailable. Please select Yes.",
+      "Careful, the button is shy.",
+      "That option needs manager approval. Manager says Yes.",
+    ],
   },
   bn: {
     eyebrow: "যে মানুষটি আমার হৃদয় হাসায়",
     title: "তুমি কি আমার Valentine হবে?",
-    message: "তোমার কথা ভাবলেই সাধারণ দিনটাও নরম, উজ্জ্বল আর সুন্দর হয়ে যায়।",
+    message:
+      "তোমার কথা ভাবলেই সাধারণ দিনটাও নরম, উজ্জ্বল আর সুন্দর হয়ে যায়।",
     yes: "হ্যাঁ, চিরকাল",
     no: "না",
     hint: "Yes চাপলেই গান শুরু হবে।",
-    accepted: "তুমি হ্যাঁ বলেছো! আমার হৃদয় এখন তোমার জন্য নাচছে।",
+    detailOneLabel: "প্ল্যান",
+    detailOneText: "আনলিমিটেড হাসি",
+    detailTwoLabel: "বোনাস",
+    detailTwoText: "ফ্রি বিরক্তিকর টেক্সট",
+    detailThreeLabel: "শর্ত",
+    detailThreeText: "ফেরত নেওয়া হবে না",
+    funnyNote:
+      "সতর্কতা: Yes বললে হঠাৎ হাসি, বেশি আদর, আর সন্দেহজনক কিউট good morning message আসতে পারে।",
+    accepted:
+      "Approved. তোমার lifetime premium love subscription শুরু হয়ে গেছে।",
     missingSong:
       "গানের ফাইল পাওয়া যায়নি। তোমার MP3 ফাইলটি assets/sitaare.mp3 নামে রাখো, তারপর আবার Yes চাপো।",
-    teasing: "আরেকবার ভেবে দেখো...",
+    noLines: [
+      "No button meeting থেকে বের হয়ে গেছে।",
+      "No এখন unavailable. Yes চাপা বেশি ভালো।",
+      "এই button টা একটু লজ্জা পায়।",
+      "এই option manager approval চায়. Manager বলেছে Yes.",
+    ],
   },
 };
 
 let currentLanguage = "en";
 let isPlaying = false;
+let noAttemptCount = 0;
 
 const languageButtons = document.querySelectorAll(".lang-btn");
 const loveSongAudio = document.getElementById("loveSongAudio");
@@ -87,11 +117,13 @@ function moveNoButton() {
   const maxY = window.innerHeight - noButton.offsetHeight - 12;
   const x = Math.max(12, Math.random() * maxX);
   const y = Math.max(82, Math.random() * maxY);
+  const lines = translations[currentLanguage].noLines;
 
   noButton.classList.add("escape");
   noButton.style.left = `${x}px`;
   noButton.style.top = `${y}px`;
-  answerText.textContent = translations[currentLanguage].teasing;
+  answerText.textContent = lines[noAttemptCount % lines.length];
+  noAttemptCount += 1;
 }
 
 languageButtons.forEach((button) => {
