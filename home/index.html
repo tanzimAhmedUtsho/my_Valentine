@@ -1,26 +1,45 @@
 <!doctype html>
-<html lang="bn">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>আমার মনের কথা</title>
+    <title>My Valentine</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Hind+Siliguri:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="lang-switch">
+      <button id="lang-toggle">English / বাংলা</button>
+    </div>
+
     <div class="container">
       <div id="content">
-        <img
-          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29pZzZ0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0JpbmcmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/c76IJLufpNwSULPk77/giphy.gif"
-          alt="Cute Cat"
-          id="image-display"
-        />
-        <h1 id="question">তুমি কি আমার হবে? ❤️</h1>
+        <div class="img-wrapper">
+          <img
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29pZzZ0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0ZzR0BpbmcmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/c76IJLufpNwSULPk77/giphy.gif"
+            alt="Cute Cat"
+            id="image-display"
+          />
+        </div>
+        <h1
+          id="question"
+          data-en="Will you be mine? ❤️"
+          data-bn="তুমি কি আমার হবে? ❤️"
+        >
+          তুমি কি আমার হবে? ❤️
+        </h1>
         <div class="btn-group">
-          <button id="yes-btn">হ্যাঁ</button>
-          <button id="no-btn">না</button>
+          <button id="yes-btn" data-en="Yes" data-bn="হ্যাঁ">হ্যাঁ</button>
+          <button id="no-btn" data-en="No" data-bn="না">না</button>
         </div>
       </div>
     </div>
+    <footer class="creator">
+      Created by <span class="name">Tanzim Ahmed Utsho</span>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
