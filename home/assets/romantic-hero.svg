@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" role="img" aria-labelledby="title desc">
+  <title id="title">Romantic moonlit proposal illustration</title>
+  <desc id="desc">A premium romantic scene with a glowing moon, couple silhouettes, roses, and floating hearts.</desc>
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#fff6f7"/>
+      <stop offset="42%" stop-color="#ffdbe4"/>
+      <stop offset="100%" stop-color="#bddff2"/>
+    </radialGradient>
+    <linearGradient id="dress" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff82a3"/>
+      <stop offset="100%" stop-color="#c82e68"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#47315b"/>
+      <stop offset="100%" stop-color="#17111f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8c7d5"/>
+      <stop offset="50%" stop-color="#fff8ee"/>
+      <stop offset="100%" stop-color="#b9e2f4"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#5c2c48" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <circle cx="380" cy="380" r="338" fill="url(#sky)"/>
+  <circle cx="498" cy="190" r="90" fill="#fffdf4" opacity="0.92"/>
+  <circle cx="462" cy="174" r="93" fill="#ffdbe4" opacity="0.36"/>
+
+  <path d="M117 564c84-47 182-67 293-59 103 7 181 35 233 77 19 15 12 46-13 52-130 31-265 35-405 13-42-7-82-18-120-32-24-8-11-39 12-51Z" fill="url(#ground)" opacity="0.9"/>
+  <ellipse cx="399" cy="604" rx="217" ry="38" fill="#67314e" opacity="0.13"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M363 407c-26 8-49 33-60 68l-36 119h186l-34-119c-11-36-30-60-56-68Z" fill="url(#dress)"/>
+    <circle cx="361" cy="351" r="46" fill="#5b2d46"/>
+    <path d="M321 360c16-58 83-67 111-15 11 21 12 53 0 75-29-16-71-10-102-26-16-8-20-18-9-34Z" fill="#452038"/>
+    <path d="M337 384c14 21 45 24 63 6 7 18 2 40-17 54-17 13-43 10-58-8-14-16-11-35 12-52Z" fill="#ffd3c7"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <path d="M453 420c32 3 56 24 68 57l45 121H409l23-129c5-29 8-40 21-49Z" fill="url(#suit)"/>
+    <circle cx="475" cy="354" r="43" fill="#ffd6c7"/>
+    <path d="M434 347c10-45 60-65 94-34 13 11 18 28 15 50-31-2-55-11-75-28-8 18-19 27-34 12Z" fill="#201725"/>
+    <path d="M435 448c-18 20-37 43-52 69" fill="none" stroke="#2b1930" stroke-width="18" stroke-linecap="round"/>
+    <path d="M385 515c-21-1-38-8-51-22" fill="none" stroke="#ffd3c7" stroke-width="16" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M315 526c-13-38-28-63-47-75" fill="none" stroke="#245342" stroke-width="9" stroke-linecap="round"/>
+    <path d="M268 450c-23-6-34-25-24-42 13-22 44-10 47 14 12-21 45-17 51 7 4 18-11 37-38 39-15 1-25-5-36-18Z" fill="#db315f"/>
+    <path d="M286 500c-26-10-48-9-67 4" fill="none" stroke="#245342" stroke-width="8" stroke-linecap="round"/>
+    <path d="M222 503c-18-9-23-26-12-38 14-15 38-3 36 18 15-12 38-2 38 17 0 17-19 29-41 22-9-3-15-9-21-19Z" fill="#f16f8f"/>
+  </g>
+
+  <g fill="#d9346f" opacity="0.9">
+    <path d="M175 237c-18-22-53-10-54 20 0 29 35 47 54 72 20-25 55-43 54-72-1-30-37-42-54-20Z"/>
+    <path d="M596 354c-13-16-39-8-39 14 0 21 26 35 39 53 15-18 41-32 40-53 0-22-27-30-40-14Z"/>
+    <path d="M247 148c-10-12-29-6-29 10 0 15 19 26 29 39 10-13 29-24 29-39 0-16-20-22-29-10Z"/>
+  </g>
+
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" opacity="0.72">
+    <path d="M163 371c38-22 74-27 108-16" stroke-width="7"/>
+    <path d="M551 255c28-18 56-22 85-13" stroke-width="6"/>
+    <path d="M162 308c18-9 36-11 55-5" stroke-width="5"/>
+  </g>
+</svg>
